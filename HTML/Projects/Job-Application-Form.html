@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application</title>
+</head>
+<body>
+    <h1 style="text-align: center; font-style: oblique;">Job Application</h1>
+
+    <form>
+        <label for="applicantName">Enter Your name :</label>
+        <input type="text" id="applicantName">
+        <br><br>
+
+        <label for="applicantEmail">Enter Your Email :</label>
+        <input type="email" id="applicantEmail"><br><br>
+
+        <label for="applicantPhoneNumber">Enter Your Phone Number :</label>
+        <input type="number" id="applicantPhoneNumber"><br><br>
+
+        <label for="applicantResumeFile">Upload Resume :</label>
+        <input type="file" id="applicantResumeFile"><br><br>
+
+        <label for="applicantExperience">Experience :</label>
+        <input type="number" id="applicantExperience" placeholder="Use Up and down arrow" min="0"><br><br>
+
+
+        <fieldset>
+            <legend>Skills </legend>
+            <input type="checkbox" id="applicantSkillset" name="Skills">
+            <label for="applicantSkillset">C++</label>
+
+            <input type="checkbox" id="applicantSkillset" name="Skills">
+            <label for="applicantSkillset">JAVA</label>
+
+            <input type="checkbox" id="applicantSkillset" name="Skills">
+            <label for="applicantSkillset">MERN Stack </label>
+
+            <input type="checkbox" id="applicantSkillset" name="Skills">
+            <label for="applicantSkillset">Android Developer</label>
+        </fieldset><br>
+
+        <legend>Edutcation Details
+        <select name="educationDetails" id="applicationEducation">
+            <option value="HighSchool">10</option>
+            <option value="Class12">10+2</option>
+            <option value="UG">Under Graducated</option>
+            <option value="PG">Post Graducated</option>
+        </select>
+        </legend><br>
+
+        <legend>Availability : 
+        <input type="radio" id = "applicantavailabilityFullTime" name = "JobsType">
+        <label for="applicantavailabilityFullTime">Full Time </label>
+
+            <input type="radio" id = "applicantavailabilityPartTime" name = "JobsType">
+            <label for="applicantavailabilityPartTime">Part Time </label>
+        </legend><br>
+
+        <label for="applicantCommentSection">Additional Comment :</label><br>
+        <textarea name="commentSection" id="applicantCommentSection" cols="20" rows ="5"></textarea>
+        <br><br>
+        <button style="text-align: center;">Submit Application</button>
+   </form>
+</body>
+</html>
