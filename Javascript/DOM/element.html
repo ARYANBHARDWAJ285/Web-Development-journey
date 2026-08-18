@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Element</title>
+</head>
+
+<body>
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+</body>
+<script>
+    //  here we are traversing the tree 
+    function addLanguage(langName){
+        const li = document.createElement('li');
+        li.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(li)
+    }
+    addLanguage("java")   // takes too much time so we have to optimize 
+    addLanguage('c++')
+
+    function addOptimizeLanguage (langName){
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        document.querySelector('.language').appendChild(li)
+    }
+    addOptimizeLanguage('python')
+
+    // edit 
+    const secondLang = document.querySelector("li:nth-child(2)")
+    //secondLang.innerHTML ="c"
+    const newli = document.createElement('li')
+    newli.textContent = "C" 
+    secondLang.replaceWith(newli)
+
+    //edit 
+
+    const firstLang =  document.querySelector("li:first-child")
+    firstLang.outerHTML = '<li>Java</li>'
+
+    // remove 
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+
+</script>
+</html>
