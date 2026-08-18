@@ -1,0 +1,38 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    border: 3px solid rgb(101, 99, 99);
+    padding: 5px;
+    border-radius: 10px ; 
+     box-shadow: 2px 2px 5px rgb(101, 99, 99);
+}
+
+button:fo {
+    outline: none;
+    gap: 20px ;
+}
+
+#start , #stop  {
+
+    background-color: rgb(237, 70, 70);
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 10px ;
+    box-shadow: 2px 2px 5px rgb(101, 99, 99);
+    border: none;
+    transition: transform 0.3s ease-out  ;
+    margin: 0px 10px ;
+}
+
+#start:hover {
+    transform: scale(1.1);
+}
+#stop:hover {
+    transform: scale(1.1);
+}
